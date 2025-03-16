@@ -31,7 +31,7 @@ public class Student extends Person {
     public String toString() {
         return "Student{" +
                 "  Id:" + myIdNum +
-                ", GPA:" + myGPA +
-                super.toString();
+                ", GPA:" + String.format("%.1f", myGPA) +
+                "} " + super.toString();
     }
 }

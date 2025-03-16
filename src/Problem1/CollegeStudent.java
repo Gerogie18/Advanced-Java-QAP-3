@@ -4,7 +4,7 @@ public class CollegeStudent extends Student {
     protected String myMajor;
     protected int myYear;
 
-    public CollegeStudent (String name, int age, String gender, int id, float GPA, String major, int year) {
+    public CollegeStudent (String name, int age, String gender, int id, double GPA, String major, int year) {
         super (name, age, gender, id, GPA);
         this.myMajor = major;
         if (year >= 1) {

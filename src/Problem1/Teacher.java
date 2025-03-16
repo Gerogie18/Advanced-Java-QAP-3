@@ -34,7 +34,7 @@ public class Teacher extends Person {
     public String toString() {
         return "Teacher{" +
                 "mySubject='" + mySubject + '\'' +
-                ", mySalary=" + mySalary +
+                ", mySalary=" + String.format("%.2f", mySalary) +
                 "} " + super.toString();
     }
 }
