@@ -43,6 +43,13 @@ public class Triangle extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        this.sideA *= scaleFactor;
+        this.sideB *= scaleFactor;
+        this.sideC *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s: Side Lengths: %.2f, %.2f, %.2f",
                 super.toString(), this.sideA, this.sideB, this.sideC);

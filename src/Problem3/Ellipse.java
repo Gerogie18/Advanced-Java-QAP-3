@@ -35,6 +35,12 @@ public class Ellipse extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        this.majorAxis *= scaleFactor;
+        this.minorAxis *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s: Major Axis: %.2f, Minor Axis: %.2f",
                 super.toString(), this.majorAxis, this.minorAxis);
