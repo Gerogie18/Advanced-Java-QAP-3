@@ -1,6 +1,8 @@
 package Problem3;
 
-public abstract class Shape {
+import Problem4.Scalable;
+
+public abstract class Shape implements Scalable {
     private final String shapeName;
 
     public Shape(String shapeName) {
