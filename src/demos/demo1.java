@@ -2,7 +2,7 @@ package demos;
 
 import Problem1.*;
 
-public class demo1 {
+public class Demo1 {
     public static void main(String[] args) {
         Person personExample = new Person("Wanda Smythe", 29, "F");
         Student studentExample = new Student("Paige Lyndsey", 16, "X", 4378642, 2.7f);
