@@ -25,6 +25,11 @@ public class Circle extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        this.radius *= scaleFactor;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s: Radius: %.2f",
                 super.toString(), this.radius);

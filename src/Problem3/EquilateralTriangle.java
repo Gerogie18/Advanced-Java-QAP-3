@@ -26,6 +26,12 @@ public class EquilateralTriangle extends Shape {
     }
 
     @Override
+    public void scale(double scaleFactor) {
+        this.sideLength *= scaleFactor;
+    }
+
+
+    @Override
     public String toString() {
         return String.format("%s: Side Lengths: %.2f, %.2f, %.2f",
                 super.toString(), this.sideLength, this.sideLength, this.sideLength);
